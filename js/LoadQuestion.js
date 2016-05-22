@@ -40,19 +40,22 @@ function isSame(x,s){
 }
 $(function(){
     var imgs = ["images/lead_back.png","images/begin-btn.png","images/nextBtn.png"];
+    //虚拟测试
     for(var i = 0,len = _data.length; i<len; i++){
         imgs.push(_data[i].pic);
         initConfusion(i);
     }
     loadImg(imgs);
+    //注释到此
+
     //$.post("url",1,function(data){
     //    $.mobile.loading('show');
     //    if(data.status == 200){
-    //        var _data = data.data;
-    //        var imgs = ["../images/lead_back.png","../images/begin-btn.png","../images/nextBtn.png"];
-    //        for(var i = 0,len = _data.length; i<len; i++){
-    //            imgs.push(_data[i].pic);
-    //        }
+    //        _data = data.data;
+    //    for(var i = 0,len = _data.length; i<len; i++){
+    //        imgs.push(_data[i].pic);
+    //        initConfusion(i);
+    //    }
     //        loadImg(imgs);
     //    }else {
     //        alert(data.info);
